@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import "./HomeScreen.css";
 import requests from "../Requests";
+import Row from "../components/Row";
 const HomeScreen = () => {
   return (
     <div className="homeScreen">
@@ -11,7 +12,7 @@ const HomeScreen = () => {
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow
+        isLargeRow={true}
       />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
